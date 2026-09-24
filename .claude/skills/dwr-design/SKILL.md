@@ -36,10 +36,11 @@ Type: Georgia serif (`.display`, `h3`) for headlines; the system sans stack for 
 1. `.announce` bar at the very top with one link to `#pilot`.
 2. Sticky nav with section links and a `.nav-cta` button.
 3. Hero with one primary `btn primary big` CTA and one secondary `btn big`.
-4. `#eight`: the nine parts as a connected `.flow` (node + `.flow-body` per step, `.flow-group` labels for "The pre-release mechanism", "The station", "The show").
-5. One section per part, alternating backgrounds for variety: plain white, `band-soft`, `band-dark`, `band-purple`. Never put two sections with the same band next to each other.
-6. `.cta-strip` bands between groups repeat the one CTA: "Plan your pre-release →" linking to `#pilot`.
-7. Report, Why DWR, What's next, then the `#pilot` sign-up as the final CTA.
+4. `#eight`: the nine parts as a connected `.flow`, grouped into five categories (`.flow-group`: Build the fan base 01-02, Get the story out 03-04, Learn and target 05-06, Prove the airplay 07-08, Keep it on air 09). Each step has a title, a description and a `.value` "Added value" line. Section eyebrows start with the category name.
+5. `#journey` (`band-dark`): how a new record moves through DWR in four `.stage` columns (Record added, Pre-release goes live, On air and in front of fans, Release day and report). Each item carries the part number it belongs to.
+6. One section per part, alternating backgrounds for variety: plain white, `band-soft`, `band-dark`, `band-purple`. Never put two sections with the same band next to each other.
+7. `.cta-strip` bands between groups repeat the one CTA: "Plan your pre-release →" linking to `#pilot`.
+8. Report, Why DWR, What's next, then the `#pilot` sign-up as the final CTA.
 
 ## Rules
 
