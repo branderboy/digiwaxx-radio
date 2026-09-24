@@ -40,7 +40,7 @@ Type: Georgia serif (`.display`, `h3`) for headlines; the system sans stack for 
 5. `#journey` (`band-dark`): how a new record moves through DWR in four `.stage` columns (Record added, Pre-release goes live, On air and in front of fans, Release day and report). Each item carries the part number it belongs to.
 6. One section per part, alternating backgrounds for variety: plain white, `band-soft`, `band-dark`, `band-purple`. Never put two sections with the same band next to each other.
 7. `.cta-strip` bands between groups repeat the one CTA: "Plan your pre-release →" linking to `#pilot`.
-8. Report, Why DWR, What's next, then the `#pilot` sign-up as the final CTA.
+8. Report, Why Digiwaxx, What's next, then the `#pilot` sign-up as the final CTA.
 
 ## Rules
 
