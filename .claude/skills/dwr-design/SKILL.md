@@ -36,14 +36,27 @@ Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and re
 | `--body` / `--muted` | `#43303b` / `#83707c` | Body text |
 | `--pink` | `#d4a0a0` | Accent on dark: hero highlight, pulse dot, kickers and checkmarks in the pilot block |
 
+## Art direction
+
+Always apply `.claude/skills/visual-art-direction/SKILL.md` as well. The user rejected boxed, card-heavy layouts ("everything is blocks", "doesn't tell a story").
+
+- Concept: the page reads like the liner notes of one record, from studio to release day. Editorial type on white, rules instead of boxes, one dark radio-night band.
+- Signature element: the five acts (Act I to Act V) with huge pale rose numerals down the left, like a tracklist. Keep boldness there; keep everything else restrained.
+- No cards, rose fill bands, filled chips or dark result bars. Use hairline rules (`--line`), 2px plum-ink rules to open a list, tables, definition lists and columns split by thin rules.
+- The only framed elements are the product mockups (kit page, press page, spin log) and the report document.
+- No accent-colored words in section headings (hero and the pull quote excepted). Eyebrow labels only where they carry meaning.
+- Keep the hero exactly as it is.
+
 ## Components
 
 - Nav: `rgba(13,5,13,.92)` with blur, uppercase links, white `nav-cta`.
-- Hero: centered, magenta-to-plum gradient, `eyebrow-badge` with `pulse-dot`, uppercase H1 with the Digiwaxx text shadow and a dusty pink `.highlight` clause, white `btn-big` with `btn-subtext`, studio photo with two floating cards, `hero-stats` row (9 parts, 5 categories, 1 report).
-- `.btn`: raspberry (`--accent`) with white text on light sections; white with plum text inside the hero, nav and `.cta-block`. Barlow Condensed 800 uppercase.
-- Process timeline (`.process` in `#how`): four stages joined by a line, each with a magenta number, a one-line summary, a white list of steps tagged with chips (`.chip.in` what the artist provides, `.chip.part` the DWR part number, `.chip.out` what comes back), and a dark "Result" bar. Rows align across stages with `subgrid`; a legend explains the chips. Keep this structure when editing the process.
-- Cards and tiles: white, `--line` border, radius 16px, raspberry hover border.
-- `.cta-block`: the one dark island (plum gradient) holding the pilot plan cards.
+- Hero (unchanged): magenta-to-plum gradient, eyebrow badge with pulse dot, uppercase H1 with dusty pink clause, white button, studio photo with two floating cards, stats row, Digiwaxx skyline along the base.
+- `.chapter`: white section separated from the next by a hairline.
+- `.journey`: the four-stage process as ruled columns (big magenta stage number, title, summary, steps with In / part number / Out in accent type, result line under a magenta rule).
+- `.act`: three-column story block (sticky act head, parts, one visual). `.act-photo` is the full-bleed DJ booth band used for Act V.
+- `.report-doc`: the sample report as a document (magenta top rule, big 500 target, table).
+- `.pilot-band`: full-bleed dark band with the DJ booth photo; plans as two columns split by a rule.
+- FAQ: hairline list.
 - Footer: `#0d050d` dark chrome.
 
 ## Real Digiwaxx assets in use
@@ -53,15 +66,14 @@ Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and re
 - DJ booth photo: `branderboy/digiwaxx/assets/video_thumbnail1.webp`, behind the show card (09) and the pilot `.cta-block` under a plum overlay.
 - Not used: `100000SONGS.webp` / `digidata.png`. They carry Digiwaxx statistics that DWR cannot claim.
 
-## Section order and backgrounds
+## Story order
 
-Hero (dark) → channels (white) → `#how` (light rose) → `#parts` (white) → `#details` zigzag with mockups (white) → reach pills (light rose) → Why Digiwaxx (white) → `#report` (light rose) → `#pilot` dark CTA block on white → `#faq` (white) → footer (dark).
+Hero → channel credits line → the problem (statement + three ruled points) → pull quote → how it works (`.journey`) → five acts (I Build the fan base 01-02, II Get the story out 03-04, III Learn and target 05-06, IV Prove the airplay 07-08, V Keep it on air 09 on the photo band) → release day report → why Digiwaxx → pilot band → FAQ → footer.
 
 ## Rules
 
-- Keep the current layout and the hero as they are unless the user asks to change them.
-
-- Primarily white space with the light rose sections. No navy, blue or yellow anywhere.
+- Keep the story order and the hero as they are unless the user asks to change them.
+- Primarily white space. Light rose only as a faint tint (report document, mockup chips). No navy, blue or yellow anywhere.
 - Every CTA says "Plan your pre-release" and points to `#pilot` (the pilot card's button points to `#top`).
 - Do not invent numbers, prices, testimonials, artist names, schedules or partner names. Mark examples as examples and targets as targets. Keep the "not guaranteed" and "pilot target" disclaimers.
 - Must work at 390px wide with no horizontal scroll; grids collapse to one column at 640px.
