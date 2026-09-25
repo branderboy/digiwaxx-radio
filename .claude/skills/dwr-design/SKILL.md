@@ -63,7 +63,7 @@ Always apply `.claude/skills/visual-art-direction/SKILL.md` as well. The user re
 
 - Logo: `branderboy/digiwaxx/assets/logo.png` in the nav and footer; `favicon.svg` (headphones mark) as the tab icon.
 - Skyline and radio tower SVG: the `body::after` background from `branderboy/digiwaxx/index.html`, placed along the bottom of the DWR hero.
-- DJ booth photo: `branderboy/digiwaxx/assets/video_thumbnail1.webp`, behind the show card (09) and the pilot `.cta-block` under a plum overlay.
+- DJ booth photo: `branderboy/digiwaxx/assets/video_thumbnail1.webp`, behind the Act V band (`.act-photo`) and the pilot band (`.pilot-band`) under a plum overlay.
 - Not used: `100000SONGS.webp` / `digidata.png`. They carry Digiwaxx statistics that DWR cannot claim.
 
 ## Story order
