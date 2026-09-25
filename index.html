@@ -207,6 +207,26 @@ footer{padding-block:56px 28px;background:#0d050d;color:rgba(255,255,255,.7)}.fo
 @media(max-width:980px){.process-cards{grid-template-columns:1fr 1fr}.process-cards>li:nth-child(2):after{content:none}.process-cards>li:nth-child(3){padding-left:24px;border-left:1px solid var(--line)}}
 @media(max-width:640px){.process-cards{grid-template-columns:1fr;gap:40px}.process-cards>li,.process-cards>li+li{padding:24px 20px 20px;border-left:1px solid var(--line);border-bottom:1px solid var(--line)}.process-cards>li:not(:last-child):after,.process-cards>li:nth-child(2):after{content:"\2193";top:auto;right:auto;left:50%;bottom:-32px;transform:translateX(-50%)}}
 @media(max-width:640px){.process-cards>li:nth-child(3){padding-left:20px}}
+#app .part-no{width:52px;height:52px;display:grid;place-items:center;border:2px solid var(--accent);border-radius:50%;font-size:1.6rem;line-height:1}
+@media(max-width:640px){#app .part-no{width:42px;height:42px;font-size:1.3rem}}
+/* larger, readable type */
+.part h3{font-size:clamp(1.8rem,2.4vw,2.2rem)}
+.part p{font-size:1.12rem;line-height:1.6}
+.part .value{font-size:1.08rem}.part .value b{font-size:.9rem}
+#app .part h3{font-size:clamp(1.9rem,2.6vw,2.4rem)}
+#app .part p{font-size:1.18rem}
+#app .part .value{font-size:1.12rem}
+.act-head p{font-size:1.15rem}
+.lede{font-size:1.25rem}
+.problem-list h3{font-size:1.7rem}.problem-list p{font-size:1.08rem}
+.facts dt{font-size:.9rem}.facts dd{font-size:1.05rem}
+.journey h3{font-size:1.8rem}.jd{font-size:1.05rem}.journey ul li{font-size:1.02rem}.journey em{font-size:1.05rem}.jr{font-size:1.05rem}
+.hero .sub{font-size:1.2rem}
+@media(max-width:640px){.part p,#app .part p{font-size:1.08rem}.lede{font-size:1.12rem}}
+/* mobile: no sideways wobble */
+html,body{max-width:100%;overflow-x:hidden;overscroll-behavior-x:none}
+@supports (overflow-x:clip){html,body{overflow-x:clip}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 </style>
 </head>
 <body>
