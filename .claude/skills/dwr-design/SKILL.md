@@ -5,7 +5,7 @@ description: Design system for the DWR (Digiwaxx Radio) site at radio.digiwaxx.c
 
 # DWR design system
 
-The page is a landing page for DWR (Digiwaxx Radio), the pre-release engine at radio.digiwaxx.com. Its layout follows the Musosoup homepage model the user chose: dark navy bands, light grey-blue bands, an amber accent, geometric sans headings, product mockups instead of illustrations, pilot plan cards and an FAQ. Follow the user's latest instruction first, then this file.
+The page is a landing page for DWR (Digiwaxx Radio), the pre-release engine at radio.digiwaxx.com. Its layout follows the Musosoup homepage model the user chose, but the page is primarily white space: only the nav and hero are navy. Every section after the hero is white, separated by thin lines, with near-black headings, one amber accent, white bordered cards, product mockups instead of illustrations, pilot plan cards and an FAQ. Follow the user's latest instruction first, then this file.
 
 ## Naming
 
@@ -21,12 +21,11 @@ The page is a landing page for DWR (Digiwaxx Radio), the pre-release engine at r
 
 | Token | Value | Use |
 |---|---|---|
-| `--navy` | `#0b1026` | Dark bands, nav, promise tiles |
-| `--tile` / `--tile-2` | `#1c2446` / `#262f55` | Gradient tiles and plan cards on navy |
-| `--slate` | `#1d4b5e` | Headings and buttons on light bands, step numbers |
-| `--mist` | `#eef3f6` | Light grey-blue bands, footer |
-| `--amber` | `#f5a524` | Accent on dark: kickers, highlights, amber button |
-| `--amber-ink` | `#a15f00` | Accent text on light bands (readable amber) |
+| `--navy` | `#0b1026` | Nav and hero only |
+| `--slate` | `#1f2937` | Near-black for headings and labels (no blue) |
+| `--mist` | `#f6f7f8` | Small neutral fills inside cards only, never full bands |
+| `--amber` | `#f5a524` | Buttons, step numbers, accent in the hero |
+| `--amber-ink` | `#a15f00` | Accent text on white (kickers, highlights) |
 | `--text` / `--muted` | `#18202f` / `#5a6577` | Body text on light |
 | `--on-dark` / `--on-dark-muted` | `#eef1f8` / `#a9b1c7` | Text on navy |
 
@@ -37,16 +36,16 @@ Headlines pair a plain clause with a `<span class="accent">` clause.
 1. Sticky navy nav with links and a white "Plan your pre-release" button.
 2. Hero (`.hero.dark`): headline, DWR intro, white CTA; studio photo with two floating cards (part 01 pre-save, part 07 spin counted) and stat chips (9 parts, 5 categories, 1 report).
 3. Channel row (white): the real channels a DWR record goes to. Never add partner logos or names that are not confirmed.
-4. `#how` (mist): the new-record flow in four numbered stages, then four navy promise tiles.
-5. `#parts` (navy): the nine parts as tiles in five categories (Build the fan base 01-02, Get the story out 03-04, Learn and target 05-06, Prove the airplay 07-08, Keep it on air 09). Each tile has a number, title, description and "Added value" line.
-6. `#details` (navy): zigzag rows, one per part, each with copy on one side and an HTML mockup on the other (campaign page, kit page, press page, send-out, rating, affinity rings, spin log + RSS item, show card). Kickers start with the category name.
-7. Reach pills (mist), Why Digiwaxx (navy), `#report` (white, report shown inside a navy "screen"), `#pilot` (navy, Spotify pilot and Apple Music plan cards), `#faq` (mist, `<details>` accordion), footer (mist).
+4. `#how` (white): the new-record flow in four numbered stages, then four navy promise tiles.
+5. `#parts` (white): the nine parts as tiles in five categories (Build the fan base 01-02, Get the story out 03-04, Learn and target 05-06, Prove the airplay 07-08, Keep it on air 09). Each tile has a number, title, description and "Added value" line.
+6. `#details` (white): zigzag rows, one per part, each with copy on one side and an HTML mockup on the other (campaign page, kit page, press page, send-out, rating, affinity rings, spin log + RSS item, show card). Kickers start with the category name.
+7. Reach pills, Why Digiwaxx, `#report` (report inside a light bordered "screen"), `#pilot` (Spotify pilot and Apple Music plan cards), `#faq` (`<details>` accordion) and footer, all white.
 
 ## Rules
 
 - Every CTA says "Plan your pre-release →" and points to `#pilot` (the pilot card's button points to `#top`).
 - Do not invent numbers, prices, testimonials, artist names, schedules or partner names. Mark examples as examples and targets as targets. Keep the "not guaranteed" and "pilot target" disclaimers.
-- Alternate navy and light bands; never stack two light bands of the same color.
+- Keep the page primarily white. Do not add navy, blue or grey-blue bands after the hero; the user rejected them as too blue.
 - Must work at 390px wide with no horizontal scroll; grids collapse to one column at 640px.
 - Keep visible focus states and the `prefers-reduced-motion` rule.
 - Before committing, screenshot the page at 1280px and 390px (Chromium is at `/opt/pw-browsers/chromium`) and check both.
