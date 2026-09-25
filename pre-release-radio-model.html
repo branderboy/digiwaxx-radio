@@ -228,6 +228,25 @@ html,body{max-width:100%;overflow-x:hidden;overscroll-behavior-x:none}
 @supports (overflow-x:clip){html,body{overflow-x:clip}}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 #app.chapter:before{display:none}
+/* tech stack strip */
+.stack{padding-block:30px;border-bottom:1px solid var(--line);background:var(--white)}
+.stack .wrap{display:flex;align-items:center;gap:18px 40px;flex-wrap:wrap;justify-content:center}
+.stack-label{margin:0;font:600 .85rem/1 var(--sans);color:var(--muted)}
+.stack-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 40px;margin:0;padding:0;list-style:none}
+.stack-logos li{display:flex;align-items:center;gap:10px;color:var(--plum-ink);font:800 1.35rem/1 var(--head);text-transform:uppercase;letter-spacing:.3px}
+.stack-logos svg{width:28px;height:28px;flex:none;color:var(--plum-ink)}
+@media(max-width:640px){.stack-logos{gap:14px 24px}.stack-logos li{font-size:1.1rem}.stack-logos svg{width:22px;height:22px}}
+/* close major gaps */
+.chapter{padding-block:72px}
+#app,#station{padding-block:64px}
+.act{padding-block:56px}
+.act-photo{padding-block:80px}
+.pilot-band{padding-block:80px}
+.problem{gap:48px}
+.journey,.process-cards{margin-top:40px}
+.chapter-head .lede{margin-top:16px}
+.hero{min-height:600px;padding-block:80px 120px}
+@media(max-width:640px){.chapter{padding-block:48px}#app,#station{padding-block:44px}.act-photo,.pilot-band{padding-block:56px}.hero{padding-block:56px 100px}}
 </style>
 </head>
 <body>
@@ -237,6 +256,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
 <div class="hero-stats"><div><b>6</b><span>Pre-release app</span></div><div><b>2</b><span>Station</span></div><div><b>1</b><span>Show</span></div></div></div></header>
 
+<section class="stack" aria-label="Tech stack"><div class="wrap"><p class="stack-label">Built on</p><ul class="stack-logos"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="currentColor"/><path d="M6.2 9.3c3.9-1.1 8.3-.7 11.6 1.2M6.8 12.5c3.2-.9 6.8-.5 9.5 1M7.4 15.4c2.5-.6 5.1-.3 7.2.8" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg><span>Spotify</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.5" fill="currentColor"/><path d="M6 9h6M6 12h6M6 15h12M14.5 8.5h3.5v4h-3.5z" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg><span>Google News</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><circle cx="12" cy="12" r="6.5" stroke="#fff" stroke-width="1.2" fill="none" opacity=".6"/><circle cx="12" cy="12" r="2.2" fill="#fff"/></svg><span>SpinCounts</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="currentColor"/><circle cx="7" cy="17" r="2" fill="#fff"/><path d="M5 11a8 8 0 0 1 8 8M5 6a13 13 0 0 1 13 13" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>RSS</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 21h8M12 3 7.5 21M12 3l4.5 18M9.5 11h5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M5 6.5a9 9 0 0 1 0 7M19 6.5a9 9 0 0 0 0 7" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg><span>Digital Radio Tracker</span></li></ul></div></section>
 <section class="chapter" id="what"><div class="wrap problem"><div class="problem-lead"><h2>One mechanism for a new record.</h2><p class="lede">DWR (Digiwaxx Radio) is one mechanism for a new record. Six parts work the record before and around release, a radio station counts and publishes every play, and a repeatable show keeps new music on air. It lives at radio.digiwaxx.com.</p></div>
 <ol class="problem-list"><li><div><h3>The pre-release app</h3><p>Parts 1 to 6: pre-saves and followers, the artist kit page, the press page, the send-out to music seeders, ratings and feedback, and affinity promotion.</p></div></li><li><div><h3>The station</h3><p>Parts 7 and 8: the DWR radio station lives on SpinCounts and is converted to an RSS feed.</p></div></li><li><div><h3>The show</h3><p>Part 9: a repeatable show, like a chart show.</p></div></li></ol></div></section>
 

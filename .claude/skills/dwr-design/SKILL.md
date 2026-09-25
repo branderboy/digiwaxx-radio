@@ -80,10 +80,11 @@ The page presents only what the user supplied. Do not add invented or borrowed c
 
 ## Page order
 
-Hero (layout unchanged; copy "We are the pre-release app") → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
+Hero (layout unchanged; copy "We are the pre-release app") → tech stack strip ("Built on": Spotify, Google News, SpinCounts, RSS, Digital Radio Tracker as monochrome marks) → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
 
 ## Rules
 
+- Spacing is tight: sections ~72px top and bottom (48px on phones); do not reopen large gaps.
 - Type is set large for reading (part body ~1.12-1.18rem, part titles ~2rem+); do not shrink it.
 - Mobile: `html, body` use `overflow-x: clip` (hidden fallback) and `overscroll-behavior-x: none` so the page never wobbles sideways.
 
