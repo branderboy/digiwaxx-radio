@@ -52,7 +52,7 @@ Always apply `.claude/skills/visual-art-direction/SKILL.md` as well. The user re
 
 - Nav: `rgba(13,5,13,.92)` with blur, uppercase links, white `nav-cta`.
 - Hero: the studio photo is the hero background (`right center/cover`), under a left-to-right plum gradient (solid plum on the left where the photo is blank, clear on the right over the artist) plus a dark fade at the bottom. Left-aligned eyebrow badge with pulse dot, uppercase H1 "We are the pre-release app" with a dusty pink clause, white "See how it works" button, stats row 6 / 2 / 1, Digiwaxx skyline along the base. On phones the gradient runs bottom to top.
-- `.chapter`: white section separated from the next by a hairline.
+- `.chapter`: white section separated from the next by a hairline. No separator above "The pre-release app" (`#app`); the user asked for it removed.
 - `.journey.process-cards`: the new-record flow as four process cards (the user asked for cards here): white, 6px radius, magenta top rule, stage title and summary, steps tagged with their part number, result line under a magenta rule, arrows between cards (down arrows on phones). No stage numbers or letters.
 - `.act` with `.solo-grid`: section head on the left (title and one line, no numeral), numbered parts on the right. In "The pre-release app" (`#app`) the part numbers 1-6 sit in raspberry outline circles. `.act-photo` is the full-bleed DJ booth band used for the show.
 - `.report-doc`: the sample report as a document (magenta top rule, big 500 target, table).
@@ -80,10 +80,11 @@ The page presents only what the user supplied. Do not add invented or borrowed c
 
 ## Page order
 
-Hero (layout unchanged; copy "We are the pre-release app") → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
+Hero (layout unchanged; copy "We are the pre-release app") → tech stack strip ("Built on": Spotify, Google News, SpinCounts, RSS, Digital Radio Tracker as monochrome marks) → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
 
 ## Rules
 
+- Spacing is tight: sections ~72px top and bottom (48px on phones); do not reopen large gaps.
 - Type is set large for reading (part body ~1.12-1.18rem, part titles ~2rem+); do not shrink it.
 - Mobile: `html, body` use `overflow-x: clip` (hidden fallback) and `overscroll-behavior-x: none` so the page never wobbles sideways.
 
