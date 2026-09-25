@@ -9,12 +9,12 @@ DWR (Digiwaxx Radio) uses the real Digiwaxx design from the `branderboy/digiwaxx
 
 ## Look
 
-Digiwaxx's light page: white space broken up by soft light purple sections, raspberry accents, dark plum chrome (nav, hero, footer), one dark CTA block for the pilot, and the yellow gradient button as the only CTA color.
+Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and real assets: white space broken up by soft light purple sections, raspberry accents and buttons, dark plum chrome (nav, hero, footer), one dark CTA block for the pilot. No yellow: the user asked for it to be dropped.
 
 ## Naming
 
 - The product is **DWR**. Spell it out as "DWR (Digiwaxx Radio)" in the hero copy, meta description, FAQ answer and footer; use "DWR" elsewhere.
-- The logo is the real Digiwaxx logo (`branderboy/digiwaxx/assets/logo.png`, embedded as a data URI) followed by a yellow "DWR" tag.
+- The logo is the real Digiwaxx logo (`branderboy/digiwaxx/assets/logo.png`, embedded as a data URI) followed by a raspberry "DWR" tag.
 - "Digiwaxx" alone means the company.
 
 ## Files
@@ -34,18 +34,24 @@ Digiwaxx's light page: white space broken up by soft light purple sections, rasp
 | `--wash` / `--wash-line` | `#faf3f7` / `#f0e0e9` | Light purple sections and small fills |
 | `--line` | `#ecdce5` | Card borders |
 | `--body` / `--muted` | `#43303b` / `#83707c` | Body text |
-| `--yellow` / `--yellow-hi` | `#FFB800` / `#FFE066` | Primary CTA only, eyebrow pulse dot, highlight chip |
-| `--pink` | `#d4a0a0` | Accent text on dark |
+| `--pink` | `#d4a0a0` | Accent on dark: hero highlight, pulse dot, kickers and checkmarks in the pilot block |
 
 ## Components
 
-- Nav: `rgba(13,5,13,.92)` with blur, uppercase links, yellow `nav-cta`.
-- Hero: centered, magenta-to-plum gradient, `eyebrow-badge` with `pulse-dot`, uppercase H1 with a yellow `.highlight` (inline, `box-decoration-break: clone`), yellow `btn-big` with `btn-subtext`, studio photo with two floating cards, `hero-stats` row (9 parts, 5 categories, 1 report).
-- `.btn`: yellow gradient, Barlow Condensed 800 uppercase, dark text.
+- Nav: `rgba(13,5,13,.92)` with blur, uppercase links, white `nav-cta`.
+- Hero: centered, magenta-to-plum gradient, `eyebrow-badge` with `pulse-dot`, uppercase H1 with the Digiwaxx text shadow and a dusty pink `.highlight` clause, white `btn-big` with `btn-subtext`, studio photo with two floating cards, `hero-stats` row (9 parts, 5 categories, 1 report).
+- `.btn`: raspberry (`--accent`) with white text on light sections; white with plum text inside the hero, nav and `.cta-block`. Barlow Condensed 800 uppercase.
 - Step cards (`.stages li`): white, radius 16px, big magenta Barlow number.
 - Cards and tiles: white, `--line` border, radius 16px, raspberry hover border.
 - `.cta-block`: the one dark island (plum gradient) holding the pilot plan cards.
 - Footer: `#0d050d` dark chrome.
+
+## Real Digiwaxx assets in use
+
+- Logo: `branderboy/digiwaxx/assets/logo.png`.
+- Skyline and radio tower SVG: the `body::after` background from `branderboy/digiwaxx/index.html`, placed along the bottom of the DWR hero.
+- DJ booth photo: `branderboy/digiwaxx/assets/video_thumbnail1.webp`, behind the show card (09) and the pilot `.cta-block` under a plum overlay.
+- Not used: `100000SONGS.webp` / `digidata.png`. They carry Digiwaxx statistics that DWR cannot claim.
 
 ## Section order and backgrounds
 
@@ -53,7 +59,7 @@ Hero (dark) → channels (white) → `#how` (light purple) → `#parts` (white) 
 
 ## Rules
 
-- Primarily white space with the light purple sections. No navy or blue anywhere.
+- Primarily white space with the light purple sections. No navy, blue or yellow anywhere.
 - Every CTA says "Plan your pre-release" and points to `#pilot` (the pilot card's button points to `#top`).
 - Do not invent numbers, prices, testimonials, artist names, schedules or partner names. Mark examples as examples and targets as targets. Keep the "not guaranteed" and "pilot target" disclaimers.
 - Must work at 390px wide with no horizontal scroll; grids collapse to one column at 640px.
