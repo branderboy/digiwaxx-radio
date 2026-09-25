@@ -1,52 +1,69 @@
 ---
 name: dwr-design
-description: Design system for the DWR (Digiwaxx Radio) site at radio.digiwaxx.com. Use for any change to index.html or pre-release-radio-model.html, including copy, new sections, layout, colors, buttons or calls to action, so every edit keeps the same Musosoup-style layout and naming.
+description: Design system for the DWR (Digiwaxx Radio) site at radio.digiwaxx.com, borrowed from the branderboy/digiwaxx repo (promote.digiwaxx.com). Use for any change to index.html or pre-release-radio-model.html, including copy, new sections, layout, colors, buttons or calls to action.
 ---
 
 # DWR design system
 
-The page is a landing page for DWR (Digiwaxx Radio), the pre-release engine at radio.digiwaxx.com. Its layout follows the Musosoup homepage model the user chose: dark navy bands, light grey-blue bands, an amber accent, geometric sans headings, product mockups instead of illustrations, pilot plan cards and an FAQ. Follow the user's latest instruction first, then this file.
+DWR (Digiwaxx Radio) uses the real Digiwaxx design from the `branderboy/digiwaxx` repo (promote.digiwaxx.com: `index.html` and `assets/light.css`). It is NOT `branderboy/new-digiwaxx`; that is a different project and must not be used. Follow the user's latest instruction first, then this file.
+
+## Look
+
+Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and real assets: white space broken up by soft light rose sections, raspberry accents and buttons, dark plum chrome (nav, hero, footer), one dark CTA block for the pilot. No yellow: the user asked for it to be dropped.
 
 ## Naming
 
-- The product is **DWR**. Spell it out as "DWR (Digiwaxx Radio)" in the hero copy, meta description, FAQ answer and footer; use "DWR" elsewhere. The logo is the amber "DWR" mark followed by "Digiwaxx Radio".
-- "Digiwaxx" alone means the company (for example "Why Digiwaxx", "Digiwaxx-led pre-release").
+- The product is **DWR**. Spell it out as "DWR (Digiwaxx Radio)" in the hero copy, meta description, FAQ answer and footer; use "DWR" elsewhere.
+- The logo is the real Digiwaxx logo (`branderboy/digiwaxx/assets/logo.png`, embedded as a data URI) followed by a raspberry "DWR" tag.
+- "Digiwaxx" alone means the company.
 
 ## Files
 
 - `index.html` is the source. `pre-release-radio-model.html` is an exact copy: after every edit run `cp index.html pre-release-radio-model.html`.
-- All CSS lives in the single `<style>` block. Fonts load from Google Fonts: Poppins (headings, buttons) and DM Sans (body).
+- Fonts from Google Fonts, same as digiwaxx: Barlow Condensed (headings, uppercase, 700/800) and DM Sans (body).
+- When editing CSS with a Python `re.sub`, pass the replacement as a function or escape backslashes; otherwise CSS escapes like `\2713` get corrupted.
 
-## Tokens
+## Tokens (from digiwaxx)
 
 | Token | Value | Use |
 |---|---|---|
-| `--navy` | `#0b1026` | Dark bands, nav, promise tiles |
-| `--tile` / `--tile-2` | `#1c2446` / `#262f55` | Gradient tiles and plan cards on navy |
-| `--slate` | `#1d4b5e` | Headings and buttons on light bands, step numbers |
-| `--mist` | `#eef3f6` | Light grey-blue bands, footer |
-| `--amber` | `#f5a524` | Accent on dark: kickers, highlights, amber button |
-| `--amber-ink` | `#a15f00` | Accent text on light bands (readable amber) |
-| `--text` / `--muted` | `#18202f` / `#5a6577` | Body text on light |
-| `--on-dark` / `--on-dark-muted` | `#eef1f8` / `#a9b1c7` | Text on navy |
+| `--plum-ink` | `#1a0a18` | Headings, dark text |
+| `--plum` / `--plum-deep` | `#3a0e2a` / `#140812` | CTA block and show card gradient |
+| `--magenta` | `#6b0a3d` | Hero top, big step numbers |
+| `--accent` | `#9c2b5a` | Kickers, highlights, links on white |
+| `--wash` / `--wash-line` | `#faf3f7` / `#f0e0e9` | Light rose sections and small fills (the user approved light rose) |
+| `--line` | `#ecdce5` | Card borders |
+| `--body` / `--muted` | `#43303b` / `#83707c` | Body text |
+| `--pink` | `#d4a0a0` | Accent on dark: hero highlight, pulse dot, kickers and checkmarks in the pilot block |
 
-Headlines pair a plain clause with a `<span class="accent">` clause.
+## Components
 
-## Section order
+- Nav: `rgba(13,5,13,.92)` with blur, uppercase links, white `nav-cta`.
+- Hero: centered, magenta-to-plum gradient, `eyebrow-badge` with `pulse-dot`, uppercase H1 with the Digiwaxx text shadow and a dusty pink `.highlight` clause, white `btn-big` with `btn-subtext`, studio photo with two floating cards, `hero-stats` row (9 parts, 5 categories, 1 report).
+- `.btn`: raspberry (`--accent`) with white text on light sections; white with plum text inside the hero, nav and `.cta-block`. Barlow Condensed 800 uppercase.
+- Process timeline (`.process` in `#how`): four stages joined by a line, each with a magenta number, a one-line summary, a white list of steps tagged with chips (`.chip.in` what the artist provides, `.chip.part` the DWR part number, `.chip.out` what comes back), and a dark "Result" bar. Rows align across stages with `subgrid`; a legend explains the chips. Keep this structure when editing the process.
+- Cards and tiles: white, `--line` border, radius 16px, raspberry hover border.
+- `.cta-block`: the one dark island (plum gradient) holding the pilot plan cards.
+- Footer: `#0d050d` dark chrome.
 
-1. Sticky navy nav with links and a white "Plan your pre-release" button.
-2. Hero (`.hero.dark`): headline, DWR intro, white CTA; studio photo with two floating cards (part 01 pre-save, part 07 spin counted) and stat chips (9 parts, 5 categories, 1 report).
-3. Channel row (white): the real channels a DWR record goes to. Never add partner logos or names that are not confirmed.
-4. `#how` (mist): the new-record flow in four numbered stages, then four navy promise tiles.
-5. `#parts` (navy): the nine parts as tiles in five categories (Build the fan base 01-02, Get the story out 03-04, Learn and target 05-06, Prove the airplay 07-08, Keep it on air 09). Each tile has a number, title, description and "Added value" line.
-6. `#details` (navy): zigzag rows, one per part, each with copy on one side and an HTML mockup on the other (campaign page, kit page, press page, send-out, rating, affinity rings, spin log + RSS item, show card). Kickers start with the category name.
-7. Reach pills (mist), Why Digiwaxx (navy), `#report` (white, report shown inside a navy "screen"), `#pilot` (navy, Spotify pilot and Apple Music plan cards), `#faq` (mist, `<details>` accordion), footer (mist).
+## Real Digiwaxx assets in use
+
+- Logo: `branderboy/digiwaxx/assets/logo.png` in the nav and footer; `favicon.svg` (headphones mark) as the tab icon.
+- Skyline and radio tower SVG: the `body::after` background from `branderboy/digiwaxx/index.html`, placed along the bottom of the DWR hero.
+- DJ booth photo: `branderboy/digiwaxx/assets/video_thumbnail1.webp`, behind the show card (09) and the pilot `.cta-block` under a plum overlay.
+- Not used: `100000SONGS.webp` / `digidata.png`. They carry Digiwaxx statistics that DWR cannot claim.
+
+## Section order and backgrounds
+
+Hero (dark) → channels (white) → `#how` (light rose) → `#parts` (white) → `#details` zigzag with mockups (white) → reach pills (light rose) → Why Digiwaxx (white) → `#report` (light rose) → `#pilot` dark CTA block on white → `#faq` (white) → footer (dark).
 
 ## Rules
 
-- Every CTA says "Plan your pre-release →" and points to `#pilot` (the pilot card's button points to `#top`).
+- Keep the current layout and the hero as they are unless the user asks to change them.
+
+- Primarily white space with the light rose sections. No navy, blue or yellow anywhere.
+- Every CTA says "Plan your pre-release" and points to `#pilot` (the pilot card's button points to `#top`).
 - Do not invent numbers, prices, testimonials, artist names, schedules or partner names. Mark examples as examples and targets as targets. Keep the "not guaranteed" and "pilot target" disclaimers.
-- Alternate navy and light bands; never stack two light bands of the same color.
 - Must work at 390px wide with no horizontal scroll; grids collapse to one column at 640px.
 - Keep visible focus states and the `prefers-reduced-motion` rule.
-- Before committing, screenshot the page at 1280px and 390px (Chromium is at `/opt/pw-browsers/chromium`) and check both.
+- Before committing, screenshot at 1280px and 390px (Chromium is at `/opt/pw-browsers/chromium`). Google Fonts are blocked in the sandbox, so headings render in a fallback there.
