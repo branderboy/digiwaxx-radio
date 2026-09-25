@@ -9,7 +9,7 @@ DWR (Digiwaxx Radio) uses the real Digiwaxx design from the `branderboy/digiwaxx
 
 ## Look
 
-Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and real assets: white space broken up by soft light purple sections, raspberry accents and buttons, dark plum chrome (nav, hero, footer), one dark CTA block for the pilot. No yellow: the user asked for it to be dropped.
+Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and real assets: white space broken up by soft light rose sections, raspberry accents and buttons, dark plum chrome (nav, hero, footer), one dark CTA block for the pilot. No yellow: the user asked for it to be dropped.
 
 ## Naming
 
@@ -31,8 +31,8 @@ Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and re
 | `--plum` / `--plum-deep` | `#3a0e2a` / `#140812` | CTA block and show card gradient |
 | `--magenta` | `#6b0a3d` | Hero top, big step numbers |
 | `--accent` | `#9c2b5a` | Kickers, highlights, links on white |
-| `--wash` / `--wash-line` | `#f6f1ff` / `#e8e0f3` | Light purple sections and small fills (the user asked for light purple, not rose) |
-| `--line` | `#e8e0f3` | Card borders |
+| `--wash` / `--wash-line` | `#faf3f7` / `#f0e0e9` | Light rose sections and small fills (the user approved light rose) |
+| `--line` | `#ecdce5` | Card borders |
 | `--body` / `--muted` | `#43303b` / `#83707c` | Body text |
 | `--pink` | `#d4a0a0` | Accent on dark: hero highlight, pulse dot, kickers and checkmarks in the pilot block |
 
@@ -55,13 +55,13 @@ Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and re
 
 ## Section order and backgrounds
 
-Hero (dark) → channels (white) → `#how` (light purple) → `#parts` (white) → `#details` zigzag with mockups (white) → reach pills (light purple) → Why Digiwaxx (white) → `#report` (light purple) → `#pilot` dark CTA block on white → `#faq` (white) → footer (dark).
+Hero (dark) → channels (white) → `#how` (light rose) → `#parts` (white) → `#details` zigzag with mockups (white) → reach pills (light rose) → Why Digiwaxx (white) → `#report` (light rose) → `#pilot` dark CTA block on white → `#faq` (white) → footer (dark).
 
 ## Rules
 
 - Keep the current layout and the hero as they are unless the user asks to change them.
 
-- Primarily white space with the light purple sections. No navy, blue or yellow anywhere.
+- Primarily white space with the light rose sections. No navy, blue or yellow anywhere.
 - Every CTA says "Plan your pre-release" and points to `#pilot` (the pilot card's button points to `#top`).
 - Do not invent numbers, prices, testimonials, artist names, schedules or partner names. Mark examples as examples and targets as targets. Keep the "not guaranteed" and "pilot target" disclaimers.
 - Must work at 390px wide with no horizontal scroll; grids collapse to one column at 640px.
