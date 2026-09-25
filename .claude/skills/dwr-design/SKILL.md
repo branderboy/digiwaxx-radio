@@ -41,19 +41,20 @@ Digiwaxx is a reference, not a copy. The DWR page takes its palette, type and re
 Always apply `.claude/skills/visual-art-direction/SKILL.md` as well. The user rejected boxed, card-heavy layouts ("everything is blocks", "doesn't tell a story").
 
 - Concept: the page reads like the liner notes of one record, from studio to release day. Editorial type on white, rules instead of boxes, one dark radio-night band.
-- Signature element: the five acts (Act I to Act V) with huge pale rose numerals down the left, like a tracklist. Keep boldness there; keep everything else restrained.
+- Signature element: the hero, with the studio photo as a full-bleed background under a plum gradient. Keep everything else restrained.
+- One number per part (1-9). No section-level numerals (no "1-6", "7-8" or a second "9") and no letters (A/B/C/D) on the new-record stages; the user rejected both.
 - No cards, rose fill bands, filled chips or dark result bars. Use hairline rules (`--line`), 2px plum-ink rules to open a list, tables, definition lists and columns split by thin rules.
 - The only framed elements are the product mockups (kit page, press page, spin log) and the report document.
 - No accent-colored words in section headings (hero and the pull quote excepted). Eyebrow labels only where they carry meaning.
-- Keep the hero exactly as it is.
+- Keep the hero as it is now unless the user asks.
 
 ## Components
 
 - Nav: `rgba(13,5,13,.92)` with blur, uppercase links, white `nav-cta`.
-- Hero (unchanged): magenta-to-plum gradient, eyebrow badge with pulse dot, uppercase H1 with dusty pink clause, white button, studio photo with two floating cards, stats row, Digiwaxx skyline along the base.
+- Hero: the studio photo is the hero background (`right center/cover`), under a left-to-right plum gradient (solid plum on the left where the photo is blank, clear on the right over the artist) plus a dark fade at the bottom. Left-aligned eyebrow badge with pulse dot, uppercase H1 "We are the pre-release app" with a dusty pink clause, white "See how it works" button, stats row 6 / 2 / 1, Digiwaxx skyline along the base. On phones the gradient runs bottom to top.
 - `.chapter`: white section separated from the next by a hairline.
-- `.journey`: the four-stage process as ruled columns (big magenta stage number, title, summary, steps with In / part number / Out in accent type, result line under a magenta rule).
-- `.act`: three-column story block (sticky act head, parts, one visual). `.act-photo` is the full-bleed DJ booth band used for Act V.
+- `.journey`: the new-record flow as four ruled columns (stage title, summary, steps tagged with their part number, result line under a magenta rule). No stage numbers or letters.
+- `.act` with `.solo-grid`: section head on the left (title and one line, no numeral), numbered parts on the right. `.act-photo` is the full-bleed DJ booth band used for the show.
 - `.report-doc`: the sample report as a document (magenta top rule, big 500 target, table).
 - `.pilot-band`: full-bleed dark band with the DJ booth photo; plans as two columns split by a rule.
 - FAQ: hairline list.
