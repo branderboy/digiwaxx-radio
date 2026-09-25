@@ -80,7 +80,7 @@ The page presents only what the user supplied. Do not add invented or borrowed c
 
 ## Page order
 
-Hero (layout unchanged; copy "We are the pre-release app") → tech stack strip ("Built on": Spotify, Google News, SpinCounts, RSS, Digital Radio Tracker as monochrome marks) → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
+Hero (layout unchanged; copy "We are the pre-release app") → tech stack strip ("Built on": Spotify, Google News, SpinCounts, RSS, Digital Radio Tracker as monochrome marks; Spotify, Google News and RSS are the official Simple Icons marks (CC0, from the npm package `simple-icons`); SpinCounts and DRT use placeholder marks until the user supplies official logo files) → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
 
 ## Rules
 
