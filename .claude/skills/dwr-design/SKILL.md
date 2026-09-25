@@ -66,15 +66,26 @@ Always apply `.claude/skills/visual-art-direction/SKILL.md` as well. The user re
 - DJ booth photo: `branderboy/digiwaxx/assets/video_thumbnail1.webp`, behind the Act V band (`.act-photo`) and the pilot band (`.pilot-band`) under a plum overlay.
 - Not used: `100000SONGS.webp` / `digidata.png`. They carry Digiwaxx statistics that DWR cannot claim.
 
-## Story order
+## Content: the user's real info only
 
-Hero → channel credits line → the problem (statement + three ruled points) → pull quote → how it works (`.journey`) → five acts (I Build the fan base 01-02, II Get the story out 03-04, III Learn and target 05-06, IV Prove the airplay 07-08, V Keep it on air 09 on the photo band) → release day report → why Digiwaxx → pilot band → FAQ → footer.
+The page presents only what the user supplied. Do not add invented or borrowed claims, figures, sample screens or pilot terms.
+
+- DWR (Digiwaxx Radio) is the pre-release app, live at radio.digiwaxx.com.
+- The pre-release app, parts 1-6, in this order: 1 get pre-saves and followers; 2 the artist creates a kit page that gives context to the newly released song (in-studio clips etc.); 3 DWR automatically publishes a press page on Google News and related; 4 it then gets sent out to the music seeders (theme pages, reposters, fan clubs and related to the music journey); 5 people rate and give feedback via account signup; 6 it promotes the artist's sound to the people with the most affinity.
+- The station: 7 the radio station lives on SpinCounts; 8 the station is converted to an RSS feed. Outside tracking: Digital Radio Tracker (DRT), tracking is free and DRT charges per report.
+- The show: 9 a repeatable show like a chart show, example "We Play Independent Music."
+- "Added value" lines per part were requested by the user.
+- Removed as not from the user: the sample report and 500 target, Spotify pilot terms, Apple Music, Why Digiwaxx, FAQ, the problem section, hero floating cards, sample mockups, DRT's 5,000+ station figure.
+
+## Page order
+
+Hero (layout unchanged; copy "We are the pre-release app") → what DWR is (`#what`) → the pre-release app 1-6 (`#app`) → the station 7-8 (`#station`) → the show 9 on the photo band (`#show`) → a new record in DWR (`#flow`) → radio.digiwaxx.com (`#start`) → footer.
 
 ## Rules
 
 - Keep the story order and the hero as they are unless the user asks to change them.
 - Primarily white space. Light rose only as a faint tint (report document, mockup chips). No navy, blue or yellow anywhere.
-- Every CTA says "Plan your pre-release" and points to `#pilot` (the pilot card's button points to `#top`).
+- Do not add CTA buttons that lead nowhere. The hero button goes to `#app`; the nav button goes to `#start`.
 - Do not invent numbers, prices, testimonials, artist names, schedules or partner names. Mark examples as examples and targets as targets. Keep the "not guaranteed" and "pilot target" disclaimers.
 - Must work at 390px wide with no horizontal scroll; grids collapse to one column at 640px.
 - Keep visible focus states and the `prefers-reduced-motion` rule.
